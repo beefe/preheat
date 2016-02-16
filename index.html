@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>蜜蜂年会大揭秘</title>
+	<meta name="viewport" content="maximum-scale=3, minimum-scale=1, width=320, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<!--STYLE_PLACEHOLDER-->
+	<link type="text/css" rel="stylesheet" href="./index.less">
+</head>
+<body>
+	<div class="loading">
+		<div class="loadingbox">
+			<div class="circle"></div>
+		</div>
+	</div>
+
+	<div class="js-container container">
+
+		<div class="scroll-page-cube-perspective">
+			<div class="scroll-page-cube-box">
+				<div class="scroll-page-cube-item page0 red">
+					<ul class="left">
+						<li class="left1"></li>
+						<li class="left2"></li>
+						<li class="left3"></li>
+						<li class="left4"></li>
+					</ul>
+					<ul class="right">
+						<li class="right1"></li>
+						<li class="right2"></li>
+						<li class="right3"></li>
+						<li class="right4"></li>
+						<li class="right5"></li>
+					</ul>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">据传，大家认为我们的年会是</div>
+					<div class="text">这样的:</div>
+					<div class="page1"><img src="./img/page1.jpg"></div>
+					<div class="text">这样的:</div>
+					<div class="page1"><img src="./img/page2.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">甚至是这样的:</div>
+					<div class="page1"><img src="./img/page3.jpg"></div>
+					<div class="text">我们其实是这样的:</div>
+					<div class="page1 special1"><img src="./img/page4.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">巨星的舞台你穿啥</div>
+					<div class="text">MM</div>
+					<div class="text">你可以:</div>
+					<div class="page1"><img src="./img/page5.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">你可以:</div>
+					<div class="page1"><img src="./img/page6.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">也可以:</div>
+					<div class="page1"><img src="./img/page7.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">GG</div>
+					<div class="text">你可以:</div>
+					<div class="page1"><img src="./img/page8.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">也可以:</div>
+					<div class="page1"><img src="./img/page9.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">甚至可以:</div>
+					<div class="page1"><img src="./img/page10.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">但绝不能:</div>
+					<div class="page1"><img src="./img/page11.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">绝不能:</div>
+					<div class="page1"><img src="./img/page12.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="text">绝不能:</div>
+					<div class="page1"><img src="./img/page13.jpg"></div>
+				</div>
+				<div class="scroll-page-cube-item red page1 special3">
+					<div class="text">请注意、请注意、请注意！</div>
+					<div class="text">男生必须携女伴出场，大家盛装出席，不要成为美女与野兽效果图哦</div>
+					<div class="page1"><img src="./img/page14.jpg"></div>
+					<div class="text">年会倒计时还剩9天</div>
+					<div class="text">下周五 13:38 激情狂欢</div>
+				</div>
+				<div class="scroll-page-cube-item red page1">
+					<div class="special2"><img src="./img/font_10.png"></div>
+				</div>
+				<div class="scroll-page-cube-left"><div></div></div>
+				<div class="scroll-page-cube-right"><div></div></div>
+			</div>
+		</div>
+
+	</div>
+	<script src="./modules/mod/mod.js"></script>
+	<!--RESOURCEMAP_PLACEHOLDER-->
+	<!--SCRIPT_PLACEHOLDER-->
+	<script>
+		var $ = require('Zepto');
+		var preload = require('preload');
+		var scrollPage = require('scrollPageCube');
+		var mo = require('mo');
+		var translateCurve = mo.easing.path('M0,100 L25,99.9999983 C34.6815219,20.073713 40.852195,-3.12132897e-09 100,0');
+		scrollPage({
+			par: $('.js-container').find('.scroll-page-cube-perspective')
+		});
+		preload(
+			[
+				 __uri('./img/font_01.png'),
+				 __uri('./img/font_02.png'),
+				 __uri('./img/font_03.jpg'),
+				 __uri('./img/font_04.png'),
+				 __uri('./img/font_05.png'),
+				 __uri('./img/font_06.png'),
+				 __uri('./img/font_07.png'),
+				 __uri('./img/font_08.png'),
+				 __uri('./img/font_09.png'),
+				 __uri('./img/font_010.png'),
+				 __uri('./img/font_011.png'),
+				 __uri('./img/logo.png'),
+				 __uri('./img/page1.jpg'),
+				 __uri('./img/page2.jpg'),
+				 __uri('./img/page3.jpg'),
+				 __uri('./img/page4.jpg'),
+				 __uri('./img/page5.jpg'),
+				 __uri('./img/page6.jpg'),
+				 __uri('./img/page7.jpg'),
+				 __uri('./img/page8.jpg'),
+				 __uri('./img/page9.jpg'),
+				 __uri('./img/page10.jpg'),
+				 __uri('./img/page11.jpg'),
+				 __uri('./img/page12.jpg'),
+				 __uri('./img/page13.jpg'),
+				 __uri('./img/page14.jpg')
+			],
+			function(){
+				$('.loading').addClass('hide');
+				$('.page0 li').each(function(k, v){
+					var $li = $(v);
+					new mo.Tween({
+						repeat: 0,
+						delay: 200*k,
+						duration: 1000,
+						onStart: function(){
+							$li.css({
+								transform: 'translateZ(1000px)'
+							});
+						},
+						onUpdate: function(progress){
+							var bounceProgress = translateCurve(progress);
+							$li.css({
+								'transform': 'translateZ('+(1-bounceProgress)*1000+'px)'
+							});
+						}
+					}).run();
+				});
+			}
+		);
+		
+
+	</script>
+</body>
+</html>

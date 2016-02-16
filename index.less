@@ -1,0 +1,196 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		body{
+			background: black;
+			position: relative;
+		}
+		ul li{
+			list-style: none;
+		}
+		.container{
+			width: 100%;
+			height: 100%;
+		}
+		.red,
+		.blue,
+		.yellow,
+		.green{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			color: white;
+		}
+		.red{
+			background: red;
+		}
+		.blue{
+			background: blue;
+			
+		}
+		.yellow{
+			background: yellow;
+		}
+		.green{
+			background: green;
+		}
+		.scroll-page-cube-left div,
+		.scroll-page-cube-right div{
+			height: 100%;
+			width: 100%;
+			background: url(./img/logo.png) center center no-repeat;
+			background-size: cover;
+		}
+		.scroll-page-cube-item{
+			perspective: 1000px;
+		}
+		.left{
+			float: left;
+			width: 50%;
+			height: 100%;
+		}
+		.right{
+			float: left;
+			width: 50%;
+			height: 100%;
+		}
+		.left li,
+		.right li{
+			width: 50%;
+			height: 20%;
+			background-size: cover;
+			background-position: center center;
+			transform-style: preserve-3d;
+			transform: translateZ(1000px);
+		}
+		.left li{
+			margin-left: 30%;
+		}
+		.right li{
+			margin-left: 20%;
+		}
+		.left1{
+			background-image: url(./img/font_01.png);
+		}
+		.left2{
+			background-image: url(./img/font_02.png);
+		}
+		.left3{
+			background-image: url(./img/font_03.png);
+		}
+		.left4{
+			background-image: url(./img/font_04.png);
+		}
+		.right1{
+			background-image: url(./img/font_05.png);
+		}
+		.right2{
+			background-image: url(./img/font_06.png);
+		}
+		.right3{
+			background-image: url(./img/font_07.png);
+		}
+		.right4{
+			background-image: url(./img/font_08.png);
+		}
+		.right5{
+			background-image: url(./img/font_09.png);
+		}
+
+		.text{
+			padding: 5px 15px;
+		}
+		.page1{
+			padding: 10px 0;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+		.page1 img{
+			width: 100%;
+			height: auto;
+			vertical-align: top;
+		}
+		.special1 img{
+			width: 50%;
+			margin: 0 auto;
+			display: block;
+		}
+		.special2 img{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 50%;
+			height: auto;
+			transform: translate(-50%, -50%);
+		}
+		.hide{
+			display: none!important;
+		}
+		.loading{
+			position: absolute;
+			z-index: 1000;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.8);
+			.loadingbox{
+				width: 163px;
+				height: 163px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				.transform(translate(-50%, -60%));
+				.circle{
+					width: 163px;
+					height: 164px;
+					position: absolute;
+					left: 0;
+					top: 0;
+					background: url(./img/loading.png) no-repeat;
+					background-size: 163px 164px;
+					-webkit-animation: loading 1.5s infinite;
+				}
+			}
+		}
+		.transform(@value){
+			-webkit-transform: @value;
+			-moz-transform: @value;
+			-ms-transform: @value;
+			-o-transform: @value;
+			transform: @value;
+		}
+		.animation(@key,@value,@time){
+			-webkit-animation: @key @value;
+			-moz-animation: @key @value;
+			-ms-animation: @key @value;
+			-o-animation: @key @value;
+			animation: @key @value;
+			-webkit-animation-delay: @time;
+		    -moz-animation-delay: @time;
+			-ms-animation-delay: @time;
+			-o-animation-delay: @time;
+			animation-delay: @time;
+		}; 
+		.transition(@property: all; @during: 1s; @timing-function: cubic-bezier(0, 1.0, 0.5, 1.0); @delay: 0) {
+			-webkit-transition: @property @during @timing-function @delay;
+			-moz-transition: @property @during @timing-function @delay;
+			-ms-transition: @property @during @timing-function @delay;
+			-o-transition: @property @during @timing-function  @delay;
+			transition: @property @during @timing-function @delay;
+		}
+		@-webkit-keyframes loading{
+			0%{
+				.transform(rotate(-30deg));
+			}
+			100%{
+				.transform(rotate(330deg));
+			}
+		}
+		.special3 .text{
+			padding: 3px 15px;
+		}
